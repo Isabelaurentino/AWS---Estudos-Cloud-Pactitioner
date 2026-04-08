@@ -1,0 +1,100 @@
+Pergunta,Resposta
+O que significa CAPEX e OPEX?,CAPEX = gasto inicial com hardware. OPEX = gasto variável conforme uso. A nuvem converte CAPEX em OPEX.
+Qual benefício da nuvem permite provisionar recursos em minutos?,Agilidade.
+Qual benefício da nuvem permite crescer ou reduzir recursos automaticamente conforme a demanda?,Elasticidade.
+Qual a diferença entre alta disponibilidade e tolerância a falhas?,HA = minimizar downtime. Tolerância a falhas = sistema continua operando mesmo com falhas em componentes.
+Quantas Zonas de Disponibilidade (AZs) uma região da AWS tem no mínimo?,2.
+O que são Edge Locations e para que servem?,Pontos de presença para CDN (CloudFront) e DNS (Route 53). Reduzem latência.
+Quais são os 4 critérios para escolher uma região AWS?,"Governança/dados, latência, serviços disponíveis."
+Qual serviço armazena e rotaciona automaticamente credenciais como senhas de RDS?,AWS Secrets Manager.
+Qual a diferença entre Secrets Manager e Parameter Store?,Secrets Manager tem rotação automática. Parameter Store é gratuito mas rotação manual.
+Qual serviço fornece certificados SSL/TLS gratuitos para CloudFront e ALB?,AWS Certificate Manager (ACM).
+Qual serviço avalia se os recursos da AWS estão em conformidade com regras definidas?,AWS Config.
+Qual serviço usa machine learning para descobrir dados sensíveis no S3?,Amazon Macie.
+"Qual serviço centraliza regras de WAF,  Shield e Security Groups em várias contas?",AWS Firewall Manager.
+"Diferença entre GuardDuty, Inspector e Macie?",GuardDuty = ameaças. Inspector = vulnerabilidades. Macie = dados sensíveis.
+O que o AWS Shield Advanced oferece além do Standard?,Proteção avançada contra DDoS e ressarcimento financeiro por custos extras durante ataque.
+O que é o AWS Artifact?,"Portal com relatórios de conformidade (SOC, PCI, ISO) da AWS."
+O que são Service Control Policies (SCPs) no AWS Organizations?,Políticas que restringem o que contas filhas podem fazer.
+"Qual serviço centraliza achados de segurança do GuardDuty, Inspector, Macie e Config?",AWS Security Hub.
+Qual serviço gerencia chaves de criptografia na AWS?,AWS KMS (Key Management Service).
+Qual a diferença entre Security Group e NACL?,"SG = stateful, nível de instância. NACL = stateless, nível de sub-rede."
+Diferença entre RDS Multi-AZ e Read Replica?,Multi-AZ = failover automático (HA). Read Replica = escala de leitura (performance).
+Qual serviço melhora performance de TCP/UDP globalmente usando edge locations?,AWS Global Accelerator.
+Qual serviço conecta ambientes on-premises ao armazenamento da AWS?,AWS Storage Gateway.
+Qual serviço de arquivos gerenciado é compatível com SMB (Windows)?,Amazon FSx for Windows File Server.
+Qual serviço orquestra fluxos de trabalho serverless (coordena Lambdas)?,AWS Step Functions.
+O que é o AWS Outposts?,Infraestrutura AWS executada no datacenter do cliente (híbrida).
+O que é o Amazon ECR?,Elastic Container Registry – repositório privado de imagens Docker.
+Diferença entre CloudFormation e Elastic Beanstalk?,CloudFormation provisiona qualquer serviço AWS. Beanstalk é específico para aplicações web.
+O que é o AWS Snow Family?,"Dispositivos físicos para transporte de dados: Snowcone (8TB),  Snowball (80TB), Snowmobile (100 PB)."
+Qual serviço de BI da AWS é similar ao Power BI?,Amazon QuickSight.
+Qual ferramenta estima custos antes de provisionar recursos?,AWS Pricing Calculator.
+Qual benefício do Consolidated Billing no AWS Organizations?,Desconto agregado por volume (soma do uso de todas as contas).
+Quais são os 3 tipos de pagamento para Reserved Instances?,"All Upfront, Partial Upfront, No Upfront."
+Diferença entre Compute Savings Plans e EC2 Instance Savings Plans?,"Compute = flexível (EC2, Fargate, Lambda). EC2 Instance = específico para tipo de instância."
+Qual serviço detecta aumentos inesperados de custo e envia alertas?,AWS Cost Anomaly Detection.
+Para que servem tags na AWS?,Alocar custos por projeto/departamento (cost allocation).
+Qual serviço permite criar alertas personalizados de orçamento?,AWS Budgets.
+Qual ferramenta visualiza custos ao longo do tempo com filtros?,AWS Cost Explorer.
+Quais são os 6 pilares do AWS Well-Architected Framework?,"Excelência Operacional, Segurança, Confiabilidade, Eficiência de Performance, Otimização de Custos, Sustentabilidade. "
+O que é um Milestone no Well-Architected?,Marcador para acompanhar a evolução da arquitetura ao longo do tempo.
+O que é o EC2 Auto Scaling?,Serviço que aumenta ou reduz a escala horizontal das máquinas conforme demanda.
+O que são Instâncias Spot?,"Leilão de máquinas ociosas com desconto até 90%, mas podem ser retomadas a qualquer momento."
+O que é o Elastic Load Balance (ELB)?,Distribui tráfego entre recursos e faz health check antes de enviar requisições.
+Quais são os tipos de Load Balancer da AWS?,Application Load Balancer (camada 7) e Network Load Balancer (camada 4).
+O que é uma AMI?,Amazon Machine Image – imagem do sistema operacional e softwares pré-instalados.
+O que é o Route53?,Serviço de DNS da AWS.
+O que é o SNS?,Simple Notification Service – notificações pub/sub para usuários finais.
+O que é o SQS?,Simple Queue Service – fila de mensagens entre componentes de software.
+O que é o SES?,Serviço de envio de e-mails em massa (email marketing).
+O que é o AWS Lambda?,Serviço serverless para executar código com gatilhos (máximo 15 minutos).
+O que é o ECS?,Elastic Container Service – gerenciamento de contêineres Docker.
+O que é o EKS?,Elastic Kubernetes Service – Kubernetes gerenciado na AWS.
+O que é o AWS Fargate?,Mecanismo serverless para contêineres (sem provisionar servidores).
+O que é o Elastic File System (EFS)?,"Sistema de arquivos nativo da nuvem para Linux, escalável e elástico."
+O que é Instance Store?,Armazenamento temporário vinculado à instância EC2. Dados são perdidos se a instância for encerrada.
+O que é o S3?,Simple Storage Service – armazenamento de objetos (até 5TB por objeto).
+Quais são as camadas de armazenamento do S3?,"Glacier Deep Archive, Glacier, S3 IA, S3 One Zone IA, S3 Standard, S3 Inteligent-Tiering"
+O que é o RDS?,Relational Database Service – banco de dados relacional gerenciado.
+O que é o Amazon Aurora?,"Banco relacional empresarial compatível com MySQL/PostgreSQL, 5x mais rápido."
+O que é o DynamoDB?,"Banco NoSQL serverless, autoescalável e de resposta rápida."
+O que é o Amazon Redshift?,Data warehouse para análise de big data.
+O que é o Amazon Neptune?,Banco de dados de grafos totalmente gerenciado.
+O que é o AWS DMS?,Database Migration Service – migra bancos de dados para AWS com mínimo downtime.
+O que é o Direct Connect?,Conexão física dedicada entre datacenter e AWS (baixa latência).
+O que é o CloudFront?,CDN que acelera distribuição de conteúdo estático e dinâmico usando Edge Locations.
+O que é o Amazon CloudSearch?,Serviço gerenciado de busca para sites e aplicações.
+O que é o AWS CloudFormation?,Provisiona recursos automaticamente a partir de template (IaC).
+O que é o AWS Elastic Beanstalk?,Implanta aplicações web automaticamente sem gerenciar infraestrutura.
+O que é o IAM?,Identity and Access Management – controla quem acessa o quê.
+Qual a diferença entre Role e Policy no IAM?,Role = serviço acessa serviço. Policy = grupo de usuários acessa serviço.
+Boas práticas de segurança IAM?,"Não usar Root, ativar MFA, criar usuários individuais, privilégios mínimos."
+O que é o Amazon Inspector?,Avalia aplicações em busca de vulnerabilidades.
+O que é o Amazon GuardDuty?,Detecção inteligente de ameaças monitorando atividades na conta.
+O que é o AWS WAF?,Firewall de aplicação web que filtra tráfego malicioso (camada 7).
+O que é o AWS KMS?,Key Management Service – cria e gerencia chaves de criptografia.
+O que é o AWS Organizations?,Centraliza gerenciamento de múltiplas contas e consolida faturamento.
+O que é o CloudWatch?,"Monitora recursos e métricas (CPU, alarmes, logs)."
+O que é o AWS CloudTrail?,Registra chamadas de API (quem fez o quê e quando).
+O que é o AWS Trusted Advisor?,"Orientações para reduzir custos, melhorar segurança e performance."
+Quais são os planos de suporte da AWS?,"Basic, Developer, Business, Enterprise."
+O que é um Suporte Case?,Chamado aberto ao time de suporte da AWS.
+Quais os tipos de Case no Support Center?,"Service limit increase, Account and billing support, Technical support."
+Como a AWS cobra computação?,"Por hora ou segundo (EC2 Linux), Savings Plans, Reserved, Spot, Host Dedicado."
+O que é o AWS CAF?,Cloud Adoption Framework – orientações para migração organizada em 6 perspectivas.
+O que é o AWS Migration Hub?,Centraliza e acompanha migrações de workloads para AWS.
+O que é o AWS Application Discovery Service?,Coleta dados sobre ambientes on-premises para planejar migração.
+O que é o AWS Wavelength?,Infraestrutura AWS em bordas de redes 5G para baixíssima latência.
+O que é o AWS Batch?,Processamento de jobs em lote com escalonamento automático.
+O que é o AWS Global Accelerator?,Melhora performance global usando edge locations para TCP/UDP.
+O que é o AWS Secrets Manager?,Armazena e rotaciona automaticamente segredos como senhas e chaves de API.
+O que é o AWS Systems Manager Parameter Store?,Armazena configurações e segredos com organização hierárquica.
+O que é o AWS Config?,Avalia e registra conformidade de recursos contra regras definidas.
+O que é o Amazon Macie?,Descobre e classifica dados sensíveis no S3 usando machine learning.
+O que é o AWS Firewall Manager?,"Gerencia centralmente regras de WAF, Shield e Security Groups em múltiplas contas."
+O que é o AWS Security Hub?,Centraliza e prioriza alertas de segurança de múltiplos serviços AWS.
+O que é o AWS Certificate Manager (ACM)?,Provisiona e renova automaticamente certificados SSL/TLS gratuitos.
+O que é o AWS Artifact?,Portal de autoatendimento com relatórios de conformidade e contratos.
+O que é o Consolidated Billing?,Faturamento consolidado no Organizations com desconto agregado por volume.
+O que são Service Control Policies (SCPs)?,Restringem o que contas filhas podem fazer no Organizations.
